@@ -1,0 +1,210 @@
+devnet@dn1-ubuntu:~/local-git/netmiko$ ls -l
+total 20
+-rw-rw-r-- 1 devnet devnet 6323 Aug 26 05:48 config_loopback.py
+-rw-rw-r-- 1 devnet devnet 1630 Aug 30 19:04 get_ip_desc_info.py
+-rw-rw-r-- 1 devnet devnet 2774 Aug 26 23:40 scan_ports_and_delete_telnet.py
+-rw-rw-r-- 1 devnet devnet 2669 Aug 26 06:25 set_ntp_netmiko.py
+devnet@dn1-ubuntu:~/local-git/netmiko$ python get_ip_desc_info.py 
+====================================================================================================
+* Cisco Router Interface Information
+----------------------------------------------------------------------------------------------------
+ 192.168.37.201 : interface information
+----------------------------------------------------------------------------------------------------
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.37.201  YES manual up                    up      
+GigabitEthernet0/1         1.12.33.1       YES manual up                    up      
+GigabitEthernet0/2         1.12.16.1       YES manual up                    up      
+GigabitEthernet0/3         1.12.200.1      YES manual up                    up      
+Loopback0                  12.12.12.12     YES manual up                    up      Interface                      Status         Protocol Description
+Gi0/0                          up             up       to_server
+Gi0/1                          up             up       to_as3356.e2
+Gi0/2                          up             up       to_as16509.g0/3
+Gi0/3                          up             up       to_blue_r1.e1
+Lo0                            up             up       as1299.lo0
+----------------------------------------------------------------------------------------------------
+ 192.168.37.202 : interface information
+----------------------------------------------------------------------------------------------------
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.37.202  YES manual up                    up      
+GigabitEthernet0/1         1.33.79.2       YES manual up                    up      
+GigabitEthernet0/2         1.16.79.2       YES manual up                    up      
+GigabitEthernet0/3         1.79.100.1      YES manual up                    up      
+Loopback0                  79.79.79.79     YES manual up                    up      Interface                      Status         Protocol Description
+Gi0/0                          up             up       to_server
+Gi0/1                          up             up       to_as3356.e1
+Gi0/2                          up             up       to_as16509.g0/2
+Gi0/3                          up             up       to_red_r1.e1
+Lo0                            up             up       as7922.lo0
+----------------------------------------------------------------------------------------------------
+ 192.168.37.203 : interface information
+----------------------------------------------------------------------------------------------------
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.37.203  YES manual up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         1.16.79.1       YES manual up                    up      
+GigabitEthernet0/3         1.12.16.2       YES manual up                    up      
+Loopback0                  16.16.16.16     YES manual up                    up      Interface                      Status         Protocol Description
+Gi0/0                          up             up       to_server
+Gi0/1                          admin down     down     to_none
+Gi0/2                          up             up       to_as7922.g0/2
+Gi0/3                          up             up       to_as1299.g0/2
+Lo0                            up             up       as16509.lo0
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+* Cisco Switch Interface Information
+----------------------------------------------------------------------------------------------------
+ 192.168.37.102 : interface information
+----------------------------------------------------------------------------------------------------
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     192.168.37.102  YES manual up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  down                  down    
+GigabitEthernet0/3     unassigned      YES unset  down                  down    
+GigabitEthernet1/0     unassigned      YES unset  down                  down    
+GigabitEthernet1/1     unassigned      YES unset  down                  down    
+GigabitEthernet1/2     unassigned      YES unset  down                  down    
+GigabitEthernet1/3     unassigned      YES unset  down                  down    
+GigabitEthernet2/0     unassigned      YES unset  down                  down    
+GigabitEthernet2/1     unassigned      YES unset  down                  down    
+GigabitEthernet2/2     unassigned      YES unset  down                  down    
+GigabitEthernet2/3     unassigned      YES unset  down                  down    
+GigabitEthernet3/0     unassigned      YES unset  down                  down    
+GigabitEthernet3/1     unassigned      YES unset  down                  down    
+GigabitEthernet3/2     unassigned      YES unset  down                  down    
+GigabitEthernet3/3     unassigned      YES unset  down                  down    
+Loopback0              unassigned      YES unset  up                    up      
+Vlan200                192.168.200.2   YES manual up                    up      Interface                      Status         Protocol Description
+Gi0/0                          up             up       to_server
+Gi0/1                          up             up       
+Gi0/2                          down           down     
+Gi0/3                          down           down     
+Gi1/0                          down           down     
+Gi1/1                          down           down     
+Gi1/2                          down           down     
+Gi1/3                          down           down     
+Gi2/0                          down           down     
+Gi2/1                          down           down     
+Gi2/2                          down           down     
+Gi2/3                          down           down     
+Gi3/0                          down           down     
+Gi3/1                          down           down     
+Gi3/2                          down           down     
+Gi3/3                          down           down     
+Lo0                            up             up       blue_s1.lo0
+Vl200                          up             up       
+----------------------------------------------------------------------------------------------------
+ 192.168.37.112 : interface information
+----------------------------------------------------------------------------------------------------
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     192.168.37.112  YES manual up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  down                  down    
+GigabitEthernet0/3     unassigned      YES unset  down                  down    
+GigabitEthernet1/0     unassigned      YES unset  down                  down    
+GigabitEthernet1/1     unassigned      YES unset  down                  down    
+GigabitEthernet1/2     unassigned      YES unset  down                  down    
+GigabitEthernet1/3     unassigned      YES unset  down                  down    
+GigabitEthernet2/0     unassigned      YES unset  down                  down    
+GigabitEthernet2/1     unassigned      YES unset  down                  down    
+GigabitEthernet2/2     unassigned      YES unset  down                  down    
+GigabitEthernet2/3     unassigned      YES unset  down                  down    
+GigabitEthernet3/0     unassigned      YES unset  down                  down    
+GigabitEthernet3/1     unassigned      YES unset  down                  down    
+GigabitEthernet3/2     unassigned      YES unset  down                  down    
+GigabitEthernet3/3     unassigned      YES unset  down                  down    
+Loopback0              unassigned      YES unset  up                    up      
+Vlan100                192.168.100.2   YES manual up                    up      Interface                      Status         Protocol Description
+Gi0/0                          up             up       to_server
+Gi0/1                          up             up       
+Gi0/2                          down           down     
+Gi0/3                          down           down     
+Gi1/0                          down           down     
+Gi1/1                          down           down     
+Gi1/2                          down           down     
+Gi1/3                          down           down     
+Gi2/0                          down           down     
+Gi2/1                          down           down     
+Gi2/2                          down           down     
+Gi2/3                          down           down     
+Gi3/0                          down           down     
+Gi3/1                          down           down     
+Gi3/2                          down           down     
+Gi3/3                          down           down     
+Lo0                            up             up       red_s1.lo0
+Vl100                          up             up       
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+* Arista Router Interface Information
+----------------------------------------------------------------------------------------------------
+ 192.168.37.101 : interface information
+----------------------------------------------------------------------------------------------------
+Interface              IP Address         Status     Protocol         MTU
+Ethernet1              1.12.200.2/30      up         up              1500
+Ethernet2              1.33.200.2/30      up         up              1500
+Ethernet12             192.168.200.1/24   up         up              1500
+Loopback0              200.200.200.200/32 up         up             65535
+Management1            192.168.37.101/24  up         up              1500Interface                      Status         Protocol Description
+Et1                            up             up       to_as1299.g0/3
+Et2                            up             up       to_as3356.e11
+Et3                            up             up       
+Et4                            up             up       
+Et5                            up             up       
+Et6                            up             up       
+Et7                            up             up       
+Et8                            up             up       
+Et9                            up             up       
+Et10                           up             up       
+Et11                           up             up       
+Et12                           up             up       to_blue-s1.g0/1
+Lo0                            up             up       blue_r1.lo0
+Ma1                            up             up       To_NAT
+----------------------------------------------------------------------------------------------------
+ 192.168.37.111 : interface information
+----------------------------------------------------------------------------------------------------
+Interface              IP Address         Status     Protocol         MTU
+Ethernet1              1.79.100.2/30      up         up              1500
+Ethernet2              1.33.100.2/30      up         up              1500
+Ethernet12             192.168.100.1/24   up         up              1500
+Loopback0              100.100.100.100/32 up         up             65535
+Management1            192.168.37.111/24  up         up              1500
+Vlan100                unassigned         down       lowerlayerdown  1500Interface                      Status         Protocol Description
+Et1                            up             up       to_as7922.g0/3
+Et2                            up             up       to_as3356.e12
+Et3                            up             up       
+Et4                            up             up       
+Et5                            up             up       
+Et6                            up             up       
+Et7                            up             up       
+Et8                            up             up       
+Et9                            up             up       
+Et10                           up             up       
+Et11                           up             up       
+Et12                           up             up       to_red-s1.g0/1
+Lo0                            up             up       red_r1.lo0
+Ma1                            up             up       To_NAT
+Vl100                          down           lowerlayerdown 
+----------------------------------------------------------------------------------------------------
+ 192.168.37.204 : interface information
+----------------------------------------------------------------------------------------------------
+Interface              IP Address         Status     Protocol         MTU
+Ethernet1              1.33.79.1/30       up         up              1500
+Ethernet2              1.12.33.2/30       up         up              1500
+Ethernet11             1.33.200.1/30      up         up              1500
+Ethernet12             1.33.100.1/30      up         up              1500
+Loopback0              33.33.33.33/32     up         up             65535
+Management1            192.168.37.204/24  up         up              1500Interface                      Status         Protocol Description
+Et1                            up             up       to_as7922.g0/1
+Et2                            up             up       to_as1299.g0/1
+Et3                            up             up       
+Et4                            up             up       
+Et5                            up             up       
+Et6                            up             up       
+Et7                            up             up       
+Et8                            up             up       
+Et9                            up             up       
+Et10                           up             up       
+Et11                           up             up       to_blue_r1.e2
+Et12                           up             up       to_red_r1.e2
+Lo0                            up             up       as3356.lo0
+Ma1                            up             up       To_NAT
+----------------------------------------------------------------------------------------------------
