@@ -2,6 +2,8 @@
 * ssh protocol python library
 * runs on server or client
 * send command via ssh remotely
+* https://pypi.org/project/paramiko/
+* https://www.paramiko.org/
 
 ### installation
     $ pip3 install paramiko
