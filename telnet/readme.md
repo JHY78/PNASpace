@@ -44,7 +44,6 @@ tn.write(user.encode('ascii') + b"\n")
 if password:
     tn.read_until(b"Password: ")
     tn.write(password.encode('ascii') + b"\n")
-
 tn.write(b"conf t\n")
 tn.write(b"int loopback 10\n")
 tn.write(b"ip address 10.10.10.10 255.255.255.255\n")
@@ -57,10 +56,8 @@ tn.write(b"copy running-config startup-config\n")
 tn.write(b"\n")
 tn.write(b"sh ip int brief\n")
 tn.write(b"exit\n")
-
 print(tn.read_all().decode('ascii'))
-'''
-
+```
 * access the single device via telnet
 * configure loopback interface
 
@@ -101,7 +98,7 @@ for host in hosts:
 	tn.write(b"exit\n")
 
 	print(tn.read_all().decode('ascii'))
-'''
+```
 * access multiple switches
 * define switch information as "cs_ipaddresses.txt" file.
 * read "cs_ipaddresses.txt" file and run commands. 
