@@ -10,3 +10,5 @@
 * nornir
 * yaml
 * jinja template
+* netbox
+* batfish
